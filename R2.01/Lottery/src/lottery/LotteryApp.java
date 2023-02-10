@@ -15,6 +15,8 @@ public class LotteryApp {
     ArrayList<LotteryTicket> tickets;
 
     RandomLottery lottery;
+    
+    LotteryTicket currentWinner;
 
     /**
      * @param args the command line arguments
@@ -24,7 +26,9 @@ public class LotteryApp {
     }
 
     void newGame() {
-
+        tickets = new ArrayList<>();
+        lottery = new RandomLottery();
+        currentWinner=null;
     }
 
 }

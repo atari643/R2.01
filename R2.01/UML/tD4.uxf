@@ -1,0 +1,26 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>340</x><y>430</y><w>210</w><h>70</h></coordinates><panel_attributes>LotteryApp
+--
+_main(String[]):void_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>60</y><w>210</w><h>190</h></coordinates><panel_attributes>LotteryTicket
+--
+playerName:String
+ordered: ArrayList&lt;Integer&gt;
+unOrdered:hashSet&lt;Integer&gt;
+_MAX NUMBERS:int = 9_
+--
+LotteryTicket(String)
+valid():boolean
+playable():boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>60</y><w>210</w><h>190</h></coordinates><panel_attributes>RandomLottery
+--
+rand: Random
+ordered: ArrayList&lt;Integer&gt;
+unOrdered:hashSet&lt;Integer&gt;
+_BALLS TO DRAW : int = 6_
+_MIN VALUE: int = 1_
+_MAX VALUE: int 49_
+--
+RandomLottery()
+newBall():void
+compareLists(ArrayList&lt;Integer&gt;):int
+compareSets(HashSet&lt;Integer&gt;):int
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
